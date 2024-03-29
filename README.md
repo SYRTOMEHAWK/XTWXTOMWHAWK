@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @XTWXTOMWHAWK
+- 👋 Hi, I’m @XTWXTOMEHAWK
 - 👀 I’m interested in Coding
 - 🌱 I’m currently learning abit of every thing in IT and programing such as HTML, CSS, C#, Python and more.
 - 💞️ I’m looking to collaborate on learning more codes.
