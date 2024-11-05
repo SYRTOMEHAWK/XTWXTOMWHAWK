@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title> ZOO - links</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<script src="https://kit.fontawesome.com/1d9daad97a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="zoo.css"/>
+	</head>
+	<body>
+		<div id="container">
+
+			<div id = "banner">
+				<img id="logo" src="images/logo.jpg" alt="logo" >
+				<br>
+                <style>
+                    span{
+                background: #009688;
+                height: 100%;
+                width: 0;
+                border-radius: 25px;
+                position:absolute;
+                left:0;
+                bottom:0;
+                z-index: -1;
+                transition: 0.5s;
+                }
+                    
+                button:hover span{
+                width: 100%;
+                }
+                    
+                button:hover{
+                border: none;
+                }
+
+                .social-icon{
+                    background: #fff;
+                    transition: color 0.2s;
+                    text-decoration: none;
+                }
+                .social-icon:hover{
+                    background: #009688;
+                }
+              </style>
+
+				<div id="navigation"> 
+                <ul>
+                <li><a href="index.html"><i class='fa-solid fa-house fa-1x'></i> Home</a></li> |
+                <li><a href="gallery.html"><i class="fa-solid fa-image fa-1x"></i> Gallery</a></li> |
+                <li><a href="register.html"><i class="fa-solid fa-user-plus"></i> Register</a></li> | 
+                <li><a href="links.html"><i class="fa-solid fa-link"></i> Links</a></li> | 
+				<li><a href="login.html"><i class="fa-solid fa-user"></i> Login</a></li> 			
+                </ul>
+
+				</div>
+
+				<div id="content">
+					<h1> Welcome to the Zoo links</h1>
+                    <p>Here you have our Contact details and link weather sites</p>
+
+					<a href="https://www.bing.com/search?q=weather"><button  class="btn"><i class='fas fa-cloud-sun-rain fa-10x'></></i> <br> Weather </button> </a>
+ 
+					<a href="https://facebook.com"><button  class="btn"><i class='fab fa-facebook fa-10x'></i> <br> Facebook </button> </a>
+			
+ 					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

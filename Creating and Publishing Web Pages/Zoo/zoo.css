@@ -1,0 +1,489 @@
+*{
+margin:0 auto;
+padding:0;
+color: #fff;
+font-family: 'Poppins' , sans-serif;
+
+}/*If want to reset page margins to 0 put this code at top of stylesheets as different browsers have their own default web page settings.*/
+
+
+body {
+height: 100%;
+width:100%;
+font-family:Verdana;
+font-size: 16px; 
+display:flex;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/R.jpg);
+background-size: cover;
+background-position:center;
+overflow: hidden;
+align-items: center;
+justify-content: center;
+  flex-wrap: wrap;
+
+} 
+/*Set the text alignment to centre to ensure that the container for the web page gets centred on the page.The background colour for the website and the font style for all the pages are set in the body */ 
+
+
+#container{
+width:100%;
+margin: 0 auto;
+height:100vh ; 
+border-radius: 8px;
+padding: 1px;
+}
+/* The main div tag to hold the web page is styled with an ID of �container�. 
+All the text alignment is set back to the left.*/
+
+
+#header{
+width:1000px;
+height:20px;
+
+}
+/* Creates an an area at the top of the web page. The white border lets you see where it is. Remove this once your page is complete */
+
+#banner{
+width:100%;
+float: left;
+}
+/* Creates an are to hold the animated banner. The white border lets you see where it is. Remove this once your page is complete */
+
+#navigation{
+width: 85%;
+margin: auto;
+color: #fff;
+padding: 35px 0px;
+text-transform: uppercase ;
+text-align: center;
+font-weight:bold;
+justify-content: space-between; 
+}
+
+#navigation ul li{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}
+    
+#navigation ul li a{
+text-decoration: none;
+text-transform: uppercase;
+color: #fff;
+}
+    
+#navigation ul li::after{
+content:'';
+height: 3px;
+width: 0;
+background: #009688;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+border-radius:5px;
+}
+    
+#navigation ul li:hover::after{
+width: 100%;
+}
+
+
+/* Creates an an area to hold the links. The white border lets you see where it is. Remove this once your page is complete */
+
+#content{
+width: 100%;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+text-align:center;
+color: #fff;
+}
+/* Creates an an area to hold the content of hte web page. The white border lets you see where it is. Remove this once your page is complete */
+
+
+h1{
+color: #45f3ff;
+font-size:28px;
+font-weight:bold;
+text-align:center;
+text-transform: uppercase ;
+}
+/* Styles the main headings for the web pages */
+
+#logo {
+    float:left;
+    margin-left:10px;
+    height:150px;
+     width:150px;
+    }
+.img {
+float:left;
+margin-left:10px;
+height: 150px;
+width: 150px;
+}
+
+/* Creates a container for gallery.html an image & places it at the right-hand side of the web page.*/
+
+
+
+
+.thumbnail {
+    background-color: #000;
+    display: inline-block;
+    font-size: 15px;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transform: translate(0%);
+
+  }
+  
+  .thumbnail * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  
+  .thumbnail h3 {
+    background-color: #000000;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 5px 10px;
+    text-transform: uppercase;
+
+  }
+  
+  .thumbnail:before,
+  .thumbnail:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.35s ease;
+    background-color: #000000;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff ;
+    content: '';
+    opacity: 0.3;
+    z-index: 1;
+  }
+  
+  .thumbnail:before {
+    -webkit-transform: skew(45deg) translateX(-155%);
+    transform: skew(45deg) translateX(-155%);
+  }
+  
+  .thumbnail:after {
+    -webkit-transform: skew(45deg) translateX(155%);
+    transform: skew(45deg) translateX(155%);
+  }
+  
+  .thumbnail img {
+    backface-visibility: hidden;
+    max-width: 100%;
+    width: 250px;
+    height: 150px;
+    vertical-align: top;
+  }
+  
+  .thumbnail figcaption {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    box-shadow: 0 0 10px #000000;
+  }
+  
+  .thumbnail a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  
+  .thumbnail:hover > img,
+  .thumbnail.hover > img {
+    opacity: 0.5;
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+  }
+  
+  .thumbnail:hover:before,
+  .thumbnail.hover:before {
+    transform: skew(45deg) translateX(-55%);
+  }
+  
+  .thumbnail:hover:after,
+  .thumbnail.hover:after {
+    transform: skew(45deg) translateX(55%);
+  }
+  
+  .thumbnail:hover figcaption,
+  .thumbnail.hover figcaption {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+/* Creates active  style for all buttons*/
+
+button{
+    width:200px;
+    padding:15px 0;
+    text-align:center;
+    margin:20px 10px;
+    border-radius:25px;
+    font-weight: bold;
+    border:2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    }      
+  
+
+
+
+
+  /* !Register.html only*/
+ 
+  .box{
+    position: relative;
+    width: 700px;
+    height: 600px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    transform: translate(-10% , 25%);
+
+}
+.box::before{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 700px;
+    height: 600px;
+    background: linear-gradient(0deg,transparent,#cbcb48,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 700px;
+    height: 600px;
+    background: linear-gradient(0deg,transparent,#cbcb48,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+    z-index: 1;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.container{
+    position: absolute;
+    inset: 2px;
+    border-radius: 5px;
+    background-color: #28292d;
+    z-index: 10;
+    display: flex;
+    padding: 15px 40px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    flex-direction: column;
+
+}
+.container .title{
+    color: #45f3ff;
+    font-size: 25px;
+    font-weight: 500;
+    position:relative;
+    letter-spacing: 0.1em;
+    transform: translate(-100%);
+}
+.container .title::before{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+height: 3px;
+width: 30px;
+border-radius: 5px;
+background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+
+.content form .user-details{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 20px 0 12px 0;
+
+}
+form .user-details .input-box{
+margin-bottom: 15px;
+width: calc(100% / 2 - 10px);
+}
+form .input-box span.details{
+display: block;
+font-weight: 500;
+margin-bottom: 5px;
+}
+.user-details .input-box input{
+height: 45px;
+width: 100%;
+outline: none;
+font-size: 17px;
+border-radius: 5px;
+padding-left: 15px;
+border: 1px solid #ccc;
+border-bottom-width: 2px;
+transition: all 0.3s ease;
+color: #000;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+border-color: #45f3ff;
+}
+form .gender-details .gender-title{
+font-size: 20px;
+font-weight: 500;
+}
+form .category{
+display: flex;
+width: 80%;
+margin: 10px 0 ;
+justify-content: space-between;
+}
+form .category label{
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+form .category label .dot{
+height: 18px;
+width: 18px;
+border-radius: 50%;
+margin-right: 10px;
+background: #d9d9d9;
+border: 5px solid transparent;
+transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+background: #45f3ff;
+border-color: #d9d9d9;
+}
+form input[type="radio"]{
+display: none;
+}
+form .button{
+height: 45px;
+margin: 20px 0
+}
+form .button input{
+height: 90%;
+width: 90%;
+border-radius: 5px;
+border: none;
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 1px;
+cursor: pointer;
+transition: all 0.3s ease;
+background: linear-gradient(-135deg, #45f3ff, #cbcb48);
+}
+form .button input:hover{
+/* transform: scale(0.99); */
+background: linear-gradient(-135deg, #cbcb48, #45f3ff);
+}
+@media(max-width: 584px){
+.container{
+max-width: 100%;
+}
+form .user-details .input-box{
+margin-bottom: 15px;
+width: 100%;
+}
+form .category{
+width: 100%;
+}
+.content form .user-details{
+max-height: 300px;
+overflow-y: scroll;
+}
+.user-details::-webkit-scrollbar{
+width: 5px;
+}
+}
+@media(max-width: 459px){
+.container .content .category{
+flex-direction: column;
+}
+}
+select{
+    color: #000;
+    border-radius: 5px;
+}
+option{
+    color: #000;
+    border-radius: 8px ;
+   
+}
+.birth{
+    color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px ;
+ display: inline-block;
+}
+iframe{
+    border-radius: 5% ;
+}
+
+#back{
+  text-decoration: none;
+  padding:1px 0;
+  transform: translate(-8%, -300%);
+  font-size: 13px;
+}

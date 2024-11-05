@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>ZOO - Register</title>	 
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="zoo.css"/>
+	<script src="https://kit.fontawesome.com/1d9daad97a.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+		bod1{
+		 display: flex;
+            min-height: 88.6vh;
+		}
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id = "banner">
+        <div id="content">
+            <img id="logo" src="images/logo.jpg" alt="logo" ><br>
+        
+            <div id="navigation"> 
+                <ul>
+                <li><a href="index.html"><i class='fa-solid fa-house fa-1x'></i> Home</a></li> |
+                <li><a href="gallery.html"><i class="fa-solid fa-image fa-1x"></i> Gallery</a></li> |
+                <li><a href="register.html"><i class="fa-solid fa-user-plus"></i> Register</a></li> | 
+                <li><a href="links.html"><i class="fa-solid fa-link"></i> Links</a></li> | 
+				<li><a href="login.html"><i class="fa-solid fa-user"></i> Login</a></li> 			
+                </ul>
+            </div>        
+        <bod1>
+        <div class="box">
+            <div class="container">
+                <div class="title" >Registration</div>
+                    <div class="content">
+                      <form action="#">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">First Name</span>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            
+                            <div class="input-box">
+                             <span class="details">Surname</span>
+                             <input type="text" placeholder="Enter your Surname" required>
+                            </div>
+                            <div class="input-box">
+                             <span class="details">Email</span>
+                             <input type="text"  placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                             <span class="details">Phone Number</span>
+                             <input type="text" placeholder="Enter your number" required>
+                            </div>
+                            <div class="input-box">
+                             <span class="details">Password</span>
+                             <input type="text"  placeholder="Enter your password" required>
+                            </div>
+                            <div class="input-box">
+                             <span class="details">Confirm Password</span>
+                             <input type="text" placeholder="Confirm your password" required>
+                            </div>
+                        </div>
+                     <div class="gender-details">
+                      <input type="radio" name="gender"  id="dot-1">
+                      <input type="radio" name="gender"  id="dot-2">
+                      <input type="radio" name="gender"  id="dot-3">
+                      <span class="gender-title">Gender</span>
+                        <div class="category">
+                         <label for="dot-1">
+                         <span class="dot one"></span>
+                         <span class="gender">Male</span>
+                         </label>
+                         <label for="dot-2">
+                         <span class="dot two"></span>
+                         <span class="gender">Female</span>
+                         </label>
+                         <label for="dot-3">
+                         <span class="dot three"></span>
+                         <span class="gender">Prefer not to say</span>
+                         </label>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Date of Birth: 
+                            <input type="date" class="birth" placeholder="Enter your DOB" required></span>
+                            </div><br>
+                        <div class="option">
+                            <label for="Animal">Animal:</label>
+<select name="animal" class="option" required>
+    <option value="0"> All</option>
+    <option value="1"> Lion</option>
+    <option value="2"> Zebra</option>
+    <option value="3"> Giraffe</option>
+    <option value="4"> Elephant</option>
+    <option value="5"> Tiger</option>
+    <option value="6"> Panda</option>
+    <option value="7"> Hyena</option>
+	<option value="8"> Monkey</option>
+</select>
+                        </div>
+                        
+                     <div class="button">
+                        <a href="login.html"><input type="submit" value="Register"></a>
+                     </div>
+                     </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>   
+		</div>
+    </body>
+</html>
